@@ -16,11 +16,14 @@ class sfSimpleMenuItem
   
   private $submenu;
   
+  private $isSeparator;
+  
   public function __construct(array $menuItem)
   {
     $this->title = isset($menuItem['title']) ? $menuItem['title'] : '';
     $this->url = isset($menuItem['url']) ? $menuItem['url'] : null;
     $this->submenu = isset($menuItem['submenu']) ? new sfSimpleMenu($menuItem['submenu']) : null;
+    $this->isSeparator = isset($menuItem['separator']);
   }
 
   public function getTitle()
@@ -46,6 +49,11 @@ class sfSimpleMenuItem
   public function getSubmenu()
   {
     return $this->submenu;
+  }
+  
+  public function isSeparator()
+  {
+    return $this->isSeparator;
   }
 
 }
