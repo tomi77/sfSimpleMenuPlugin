@@ -7,7 +7,7 @@
  * @subpackage model
  * @author     Tomasz Jakub Rup <tomasz.rup@gmail.com>
  */
-class sfMenu implements ArrayAccess, Iterator
+class sfSimpleMenu implements ArrayAccess, Iterator
 {
 
   /**
@@ -28,7 +28,7 @@ class sfMenu implements ArrayAccess, Iterator
       if (isset($menuItem['credentials']) && !sfContext::getInstance()->getUser()->hasCredential($menuItem['credentials'])) {
         continue;
       }
-      $this->menu[] = new sfMenuItem($menuItem);
+      $this->menu[] = new sfSimpleMenuItem($menuItem);
     }
   }
   

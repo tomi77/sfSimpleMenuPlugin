@@ -15,7 +15,7 @@ class sfSimpleMenuComponents extends sfComponents
     
     $menu = sfConfig::get(sprintf('app_sf_simple_menu_plugin_%s', $type), array());
     
-    $this->Menu = new sfMenu($menu);
+    $this->Menu = new sfSimpleMenu($menu);
   }
 
 

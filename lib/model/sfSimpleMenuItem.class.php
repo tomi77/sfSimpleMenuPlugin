@@ -7,7 +7,7 @@
  * @subpackage model
  * @author     Tomasz Jakub Rup <tomasz.rup@gmail.com>
  */
-class sfMenuItem
+class sfSimpleMenuItem
 {
 
   private $title;
@@ -20,7 +20,7 @@ class sfMenuItem
   {
     $this->title = isset($menuItem['title']) ? $menuItem['title'] : '';
     $this->url = isset($menuItem['url']) ? $menuItem['url'] : null;
-    $this->submenu = isset($menuItem['submenu']) ? new sfMenu($menuItem['submenu']) : null;
+    $this->submenu = isset($menuItem['submenu']) ? new sfSimpleMenu($menuItem['submenu']) : null;
   }
 
   public function getTitle()
