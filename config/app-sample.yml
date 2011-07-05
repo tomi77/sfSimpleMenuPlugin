@@ -1,0 +1,4 @@
+all:
+  sf_simple_menu_plugin:
+    default:
+      00: { title: Homepage, url: "@homepage" }
