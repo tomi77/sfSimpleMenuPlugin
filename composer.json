@@ -1,0 +1,21 @@
+{
+    "name": "tomasz-rup/sf-simple-menu-plugin",
+    "type": "symfony1-plugin",
+    "description": "symfony 1.x plugin to add simple menu",
+    "keywords": ["symfony1"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomasz Jakub Rup",
+            "email": "tomasz.rup@gmail.com",
+            "role": "Creator"
+        }
+    ],
+    "support": {
+      "issues": "https://github.com/tomi77/sfSimpleMenuPlugin/issues",
+      "source": "https://github.com/tomi77/sfSimpleMenuPlugin"
+    },
+    "require": {
+        "symfony/symfony1": "*"
+    }
+}
